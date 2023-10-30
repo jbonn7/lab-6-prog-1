@@ -30,12 +30,11 @@ def main():
         if user_option == '1':
             password = input('\nPlease enter your 8-digit password to encode: ')
             encode(password)
-            print(f"\nEncoded password:{encoded_password}")
-
+            print('Your password has been encoded and stored!')
         elif user_option == '2':
             if encoded_password:
                 decoded_password=decode(encoded_password)
-                print(f"\nDecoded password:{decoded_password}")
+                print("The encoded password is",encoded_password,"and the original password is "+decoded_password+".")
 
 
         else:
